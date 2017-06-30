@@ -200,18 +200,6 @@ public class VideoChatViewActivity extends AppCompatActivity {
         container.addView(surfaceView);
         mRtcEngine.setupLocalVideo(new VideoCanvas(surfaceView, VideoCanvas.RENDER_MODE_ADAPTIVE, 0));
         mRtcEngine.switchCamera();
-
-//        FrameLayout container = (FrameLayout) findViewById(R.id.remote_video_view_container);
-//
-//        if (container.getChildCount() >= 1) {
-//            return;
-//        }
-
-//        SurfaceView surfaceViewRemote = RtcEngine.CreateRendererView(getBaseContext());
-//        container.addView(surfaceViewRemote);
-//        mRtcEngine.setupRemoteVideo(new VideoCanvas(surfaceView, VideoCanvas.RENDER_MODE_ADAPTIVE, uid));
-
-//        surfaceView.setTag(uid); // for mark purpose
     }
 
     // Tutorial Step 4
